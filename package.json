@@ -1,0 +1,16 @@
+{
+  "name": "eth-listening",
+  "version": "1.0.0",
+  "description": "以太坊监控,保存块 交易等信息",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "mongodb": "^3.2.7",
+    "axios": "^0.18.0",
+    "lowdb": "^1.0.0",
+    "web3": "^1.0.0-beta.55"
+  }
+}

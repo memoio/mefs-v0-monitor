@@ -1,0 +1,17 @@
+module.exports = {
+  // 数据库目录
+  db:'../../db/',
+  // 以太坊地址
+  ethUrl:'http://localhost:8101',
+  mongodbUrl:'mongodb://127.0.0.1:27017/',
+  dbName:'test',
+  order:{
+    tag:{
+      order:'AddOrder()',
+      readPay:'ReadPay(address,address,uint256)',
+      payKeeper:'PayKeeper(address,address,uint256)',
+      payProvider:'PayProvider(address,address,uint256)',
+    },
+    abi:[{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"alterOwner","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function","signature":"0x0ca05f9f"},{"constant":true,"inputs":[],"name":"getOwner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function","signature":"0x893d20e8"},{"inputs":[{"name":"user","type":"address"},{"name":"keeper","type":"address[]"},{"name":"provider","type":"address[]"},{"name":"time","type":"uint256"},{"name":"size","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"constructor","signature":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[],"name":"AddOrder","type":"event","signature":"0x0905316f7faca135c292b6e6f8d91c19128d372722215fe029e74e75ef84c087"},{"anonymous":false,"inputs":[{"indexed":true,"name":"user","type":"address"},{"indexed":true,"name":"provider","type":"address"},{"indexed":true,"name":"value","type":"uint256"}],"name":"ReadPay","type":"event","signature":"0x412887bd474e56e243eb289e55bd2cc3fb5023d072e45e9541a3963107e3fe7c"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"address"},{"indexed":true,"name":"value","type":"uint256"}],"name":"PayKeeper","type":"event","signature":"0xaa4c66f6ddfadc835acfabab55148a78bc3e6867ed1cdb36461a10685af4c0c3"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"address"},{"indexed":true,"name":"value","type":"uint256"}],"name":"PayProvider","type":"event","signature":"0x1569130f5bdbde161a213db1c477e4f2670f09e2a9c1c08ca9bafe749b80cb41"},{"anonymous":false,"inputs":[{"indexed":false,"name":"from","type":"address"},{"indexed":false,"name":"to","type":"address"}],"name":"AlterOwner","type":"event","signature":"0x8c153ecee6895f15da72e646b4029e0ef7cbf971986d8d9cfe48c5563d368e90"},{"anonymous":false,"inputs":[{"indexed":false,"name":"data","type":"string"}],"name":"Error","type":"event","signature":"0x08c379a0afcc32b1a39302f7cb8073359698411ab5fd6e3edb2c02c0b5fba8aa"},{"constant":false,"inputs":[{"name":"provider","type":"address"},{"name":"money","type":"uint256"}],"name":"spaceTimePay","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function","signature":"0x1e042234"},{"constant":false,"inputs":[{"name":"provider","type":"address"}],"name":"readPay","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function","signature":"0x2eb0346f"},{"constant":true,"inputs":[],"name":"getOrder","outputs":[{"name":"","type":"address"},{"name":"","type":"address[]"},{"name":"","type":"address[]"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function","signature":"0xd36dedd2"}]
+  }
+}
